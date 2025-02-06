@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo Zitella's Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left">
+                <img class="gear" src="Assets/gear.png">
+                <a href="">Mateo Zitella</a>
+            </div>
+            <div class="right">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="projects.html">Projects</a>
+                <a href="resume.html">Resume</a>
+                <a href="art.html">Art Page</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section1">
+            <img id="backgroundImg" src="Assets/imgLoop1/img1.jpg">
+            <script> 
+                const img = document.getElementById("backgroundImg"); 
+                const sleep= (delay) => new Promise((resolve) => setTimeout(resolve, delay));
+                const images = [
+                    "Assets/imgLoop1/img1.jpg",
+                    "Assets/imgLoop1/img2.jpg",
+                    "Assets/imgLoop1/img3.jpg",
+                    "Assets/imgLoop1/img4.jpg",
+                    "Assets/imgLoop1/img5.jpg",
+                    "Assets/imgLoop1/img6.jpg",
+                    "Assets/imgLoop1/img7.jpg",
+                    "Assets/imgLoop1/img8.jpg",
+                    "Assets/imgLoop1/img9.jpg",
+                    "Assets/imgLoop1/img10.jpg", 
+                    "Assets/imgLoop1/img11.jpg"
+                ];
+                
+                async function loopImages() {
+                    while (true) { // Infinite loop runs without blocking the browser
+                        for (let i = 0; i < images.length; i++) {
+                            img.src = images[i]; // Update the image source
+                            await sleep(2000); // Wait for 1 second (1000ms)
+                        }
+                    }
+                }
+
+                loopImages();
+            </script>
+            <p id="intro"> About Me </p>
+            <i id="arrow"></i>
+        </div>
+        <div class="section2">
+            <div class="colorBarLeft"></div>
+            <div class="Img">
+                <img class="picture maskRight" src="Assets/childMe.jpg">
+            </div>
+            <div class="text">
+                <p class="paragraph">Hey there! My name is Mateo and I am a second year Mechanical Engineering student at Northeastern University. I was born in Venezuela and moved to the U.S. when I was 6 years old, lived in New York state for three years, and then moved to Greenwich, Connecticut, where I graduated from Greenwich High School in 2023. At my middle school, all students were required to take an engineering class, but the teacher was unreasonably strict and the assignments were tedious, so I thought I hated engineering for most of my high school career. </p>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="text">
+                <p class="paragraph">Instead, I pursued art in high school, taking four art classes and participating in art summer programs at Tufts University and The New School, an art school in New York City. When college enrollment season came around, I decided that I didn’t want to pursue art professionally because I had doubts about my skills and future job prospects, so I figured I would apply to Northeastern’s explore program for undeclared students. </p>
+            </div>
+            <div class="Img">
+                <img class="picture maskLeft" src="Assets/art.JPG">
+            </div>
+            <div class="colorBarRight"></div>
+        </div>
+        <div class="section2">
+            <div class="colorBarLeft"></div>
+            <div class="Img">
+                <img class="picture maskRight" src="Assets/northeastern.jpg">
+            </div>
+            <div class="text">
+                <p class="paragraph">Applying to Northeastern was a no-brainer for me since the application didn’t have any supplemental essays, which I didn’t like writing at the time since they often entailed pretending to be passionate about an academic field. Many of my friends and family suggested that I should try an engineering course, so I decided to take Cornerstone of Engineering in my first semester. </p>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="text">
+                <p class="paragraph">It was pretty normal at first: we built pasta bridges, learned some AutoCAD, and learned about the engineering design process. The first thing that sparked my interest was when we started learning Arduino with Sparkfun kits. Our professor had weekly assignments where we had to combine circuitry elements from different lessons. I would pour my heart and soul into these assignments and create all kinds of diabolical circuits. </p>
+            </div>
+            <div class="Img">
+                <img class="picture maskLeft" src="Assets/arduino.jpg">
+            </div>
+            <div class="colorBarRight"></div>
+        </div>
+        <div class="section2">
+            <div class="colorBarLeft"></div>
+            <div class="Img">
+                <img class="picture maskRight" src="Assets/section2.jpg">
+            </div>
+            <div class="text">
+                <p class="paragraph">The moment I fell in love with engineering was when we first learned about Solidworks. The more I learned, the more I became interested in features such as assemblies, relations, and hole wizard. I switched my major to Mechanical Engineering and have since worked on different projects, involving CAD, 3D printing, soldering, laser cutting and more. I haven’t been an engineer for as long as some people, but I am always actively searching for opportunities to improve my technical skills and add to my experience. </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

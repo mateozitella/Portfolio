@@ -1,0 +1,71 @@
+.headshot {
+    border-radius: 50%; 
+    width: 360px;
+    height: 360px;
+    float: left;
+    box-shadow: 0 0 20px #ff6600; /*glow and border */
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+.auto-type {
+    color: rgb(255, 255, 72);
+}
+
+
+main .column1 {
+    float: left;
+    padding-left: 10vw
+}
+
+main .column2 { 
+    float: left; 
+    width: 60%;
+    text-align: left;
+    margin-left: 40px;  
+    margin-top: 70px;
+}
+
+.intro {
+    padding-top: calc(35vh - 90px);
+    height: 90vh;
+    padding-bottom: 0;
+    display: flex;
+}
+
+.hurrySection {
+    width:100%;
+}
+
+.pt2Left {  
+    font-weight: 300;
+    font-size: 20px;
+    float: left;
+    width: 50vw;
+}
+
+.pt1 {
+    font-size: 40px;
+}
+
+.divide {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 58vw
+}
+
+.resumeButton {
+    float: right;
+    border-width: 2px;
+    border-color: rgb(255, 255, 72);
+    border-style: solid;
+    text-decoration: none;
+    margin-right: 2vw;
+    padding: 10px;
+}
+
+.space {
+    margin-top:30vh;
+}
+

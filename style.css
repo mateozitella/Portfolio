@@ -1,0 +1,89 @@
+:root {
+    --text-color: rgb(240, 240, 240); 
+    font-size: 17px; /* Set the base font size */
+    font-family: "Poppins", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:var(--text-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Adjust this value based on the height of your nav bar */
+}
+
+.navbar {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out the left and right sections */
+    align-items: center; /* Vertically center the items */
+    background: linear-gradient(90deg, #030831, #c9002bef);
+    height: 90px;
+    padding: 0 20px; /* Add horizontal padding for spacing */
+}
+
+.left {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Vertically center the items */
+    gap: 0px; /* Add spacing between the gear and the text */
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.gear {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 0px; /* Remove the extra margin */
+    display: block; /* Ensure it does not add flex properties */
+    animation: rotate 7s linear infinite;
+}
+
+.left a {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700; /* Add boldness for better emphasis */
+}
+
+
+.right {
+    display: flex; /* Flexbox to keep items in a row */
+    gap: 20px; /* Add spacing between links */
+    font-weight: 200;
+}
+
+.right a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 10px; /* Adjust padding for spacing */
+    text-align: center;
+}
+
+@keyframes hover {
+    to {
+        background: rgba(225, 225, 225, 0.3);
+        border-radius: 15px;
+        -webkit-transform: scale(1.2);
+        font-weight: 300;
+    }
+}
+
+.right a:hover {
+    animation: hover 0.2s ease-out forwards;
+}
+
+body {
+    background-color: #020412;
+}
+

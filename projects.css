@@ -1,0 +1,120 @@
+.section1 {
+    display: flex;
+    height: calc(100vh - 90px);
+}
+
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    opacity: 90%;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 1%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 1%, transparent 100%);
+}
+
+#intro {
+    font-size: 120px;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow1 {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    padding: 15px;
+    transform: rotate(45deg), translate(-50%, -50%);
+    -webkit-transform: rotate(45deg);
+    top: 93%;
+    left: 50%;
+}
+.arrow1:hover {
+    animation: arrow1 0.2s ease-out forwards;
+}
+
+@keyframes arrow1 {
+    to {
+        top:94% 
+    }
+}
+
+.dropdown {
+    margin: 20px 80px 20px 80px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #030831, #9b003bef);
+    border-color: rgb(133, 15, 15);
+    border-width: 2px; 
+    border-style: solid;
+    
+}
+
+.dropdown:hover {
+    box-shadow: 0 0 35px rgb(230, 12, 12);
+    border-color: rgb(224, 0, 0);
+}
+
+.dropdownTitle {
+    display: flex;
+    height: 100px; /* Makes children match the tallest element */
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.gearimg {
+    margin-left: 10px;
+    height: 80%;
+    flex-basis: auto;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.date {
+    font-size: 25px;
+    font-weight: 200; 
+    padding-left: 20px;
+    margin-left: auto;
+}
+
+.info {
+    font-size: 25px;
+    font-weight: 200; 
+    padding-left: 20px;
+}
+
+.divider {
+    margin-top: 10px;
+    margin-left: 220px;
+    border-color: rgb(238, 15, 15);
+}
+
+.dropdownContent {
+    margin: 20px 20px 20px 30px;
+}
+
+.paragraph {
+    margin-top: 20px; 
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.imgSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.image img {
+    border-radius: 20px;
+}
+
