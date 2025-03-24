@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <div class="section1">
+        <div class="container">
             <img id="backgroundImg" src="Assets/imgLoop1/img1.jpg">
             <script> 
                 const img = document.getElementById("backgroundImg"); 
@@ -52,61 +52,15 @@
                     while (true) { // Infinite loop runs without blocking the browser
                         for (let i = 0; i < images.length; i++) {
                             img.src = images[i]; // Update the image source
-                            await sleep(2000); // Wait for 1 second (1000ms)
+                            await sleep(4000); // Wait for 1 second (1000ms)
                         }
                     }
                 }
 
                 loopImages();
             </script>
-            <p id="intro"> About Me </p>
-            <i id="arrow"></i>
-        </div>
-        <div class="section2">
-            <div class="colorBarLeft"></div>
-            <div class="Img">
-                <img class="picture maskRight" src="Assets/childMe.jpg">
+            <div class="overlay">
+                <h1>About Me</h1>
+                <p class="text"> Hey there! My name is Mateo and I am a second year Mechanical Engineering student at Northeastern University. I was born in Venezuela and moved to the U.S. when I was 6 years old, lived in New York state for three years, and then moved to Greenwich, Connecticut, where I graduated from Greenwich High School in 2023. I have gained experience in product development, robotics, manufacturing, and test fixture design through membership at Northeastern labs and clubs. My favorite step in the engineering design process is designing and bringing prototypes to life through CAD, 3D printing, CNC machining, CAM, Arduino, C++, Python, and more. I love creating things and am always looking for opportunities to expand my knowledge of technical skills. My main hobbies are weight lifting, drawing, and painting. Be sure to check out some of my art on the portfolio’s art page! </p>
             </div>
-            <div class="text">
-                <p class="paragraph">Hey there! My name is Mateo and I am a second year Mechanical Engineering student at Northeastern University. I was born in Venezuela and moved to the U.S. when I was 6 years old, lived in New York state for three years, and then moved to Greenwich, Connecticut, where I graduated from Greenwich High School in 2023. At my middle school, all students were required to take an engineering class, but I had a bad experience with the class so I thought I hated engineering for most of my high school career. </p>
-            </div>
-        </div>
-        <div class="section2">
-            <div class="text">
-                <p class="paragraph">Instead, I pursued art in high school, taking four art classes and participating in art summer programs at Tufts University and The New School, an art school in New York City. When college enrollment season came around, I decided that I didn’t want to pursue art professionally because I had doubts about my skills and future job prospects, so I figured I would apply to Northeastern’s explore program for undeclared students. </p>
-            </div>
-            <div class="Img">
-                <img class="picture maskLeft" src="Assets/art.JPG">
-            </div>
-            <div class="colorBarRight"></div>
-        </div>
-        <div class="section2">
-            <div class="colorBarLeft"></div>
-            <div class="Img">
-                <img class="picture maskRight" src="Assets/northeastern.jpg">
-            </div>
-            <div class="text">
-                <p class="paragraph">Applying to Northeastern was a no-brainer for me since the application didn’t have any supplemental essays, which I didn’t like writing at the time since they often entailed pretending to be passionate about an academic field. Many of my friends and family suggested that I should try an engineering course, so I decided to take Cornerstone of Engineering in my first semester. </p>
-            </div>
-        </div>
-        <div class="section2">
-            <div class="text">
-                <p class="paragraph">It was pretty normal at first: we built pasta bridges, learned some AutoCAD, and learned about the engineering design process. The first thing that sparked my interest was when we started learning Arduino with Sparkfun kits. Our professor had weekly assignments where we had to combine circuitry elements from different lessons. I would pour my heart and soul into these assignments and create all kinds of diabolical circuits. </p>
-            </div>
-            <div class="Img">
-                <img class="picture maskLeft" src="Assets/arduino.jpg">
-            </div>
-            <div class="colorBarRight"></div>
-        </div>
-        <div class="section2">
-            <div class="colorBarLeft"></div>
-            <div class="Img">
-                <img class="picture maskRight" src="Assets/section2.jpg">
-            </div>
-            <div class="text">
-                <p class="paragraph">The moment I fell in love with engineering was when we first learned about Solidworks. The more I learned, the more I became interested in features such as assemblies, relations, and hole wizard. I switched my major to Mechanical Engineering and have since worked on different projects, involving CAD, 3D printing, soldering, laser cutting and more. I am always actively searching for opportunities to improve my technical skills and add to my experience. </p>
-            </div>
-        </div>
-    </main>
-</body>
-</html>
+            
