@@ -88,11 +88,15 @@
                 <p class="info">Personal Project</p>
                 <p class="date">January 2025 - Present</p>
             </div>
-                <div hidden class="dropdownContent">
-                <p class="paragraph">I wanted to make this website to showcase my projects and give employers a better picture of who I am. Additionally, it was a good opportunity to learn about web design and brush up on css, html, and javascript. </p>
-                <p class="paragraph">I initially tried to use the react library, but I decided against it because I thought it was adding unnecessary complexity to the website since I thought I wasn’t going to be re-using too many components. I originally had a different navbar design, but I thought it was too plain, so I scrapped it. </p>
-                <img style="border-radius: 20px; width: 101%;" src="Assets/websiteProj/website.png">
-                <p class="paragraph">The first page I coded was the Home page. I didn't know anything about flexbox or CSS in general, so I went about aligning it in a really strange way. It worked out, but I would have liked to be more adaptive to different viewports. If I were to do it again, I would have used flexbox. I used a library that loops through strings to give them the appearance of being typed out for the card page, and had an onclick event for the resume download button.  It was much easier to program the rest of the website after getting acquainted with the CSS box model and flexbox.</p>
+            <div hidden class="dropdownContent">
+                <p class="heading">What and Why?</p>
+                <p class="paragraph">I made this portfolio to give potential employers an opportunity to learn more about me and showcase some projects that I’ve worked on. </p>
+
+                <p class="heading">Process</p>
+                <p class="paragraph">I originally intended to use libraries like React JS or a framework like Tailwind CSS, but I eventually settled for basic HTML, CSS, and Javascript because I didn’t think there were going to be a lot of reusable components. I had some trouble with the home page because I didn’t understand CSS well enough, but after looking into flexbox and CSS cheat sheets, it was pretty easy to design the rest of the website. I chose to host the website on github because it was free, easy, and taught me a little bit about how github works. </p>
+
+                <p class="heading">Results & Possible Improvements</p>
+                <p class="paragraph">The web page looks good at the intended aspect ratio and 100% zoom, but breaks down at different aspect ratios and zooms. I could improve this in the future by adding some conditional code to handle different zooms or aspect ratios in Javascript, or making the design more vertical to accommodate mobile views. I intend to continue updating this page with future projects I work on. If you are intrested, be sure to check out my code on <a href="https://github.com/mateozitella/Portfolio" style="text-decoration: none; font-weight: 500;">Github</a></p>
             </div>
             
         </div>
@@ -100,46 +104,43 @@
         <div class="dropdown">
             <div class="dropdownTitle">
                 <img class="gearimg" src="Assets/gear.png">
-                <p class="title">1 Pound Combat Robot</p>
+                <p class="title">GALINT</p>
                 <p class="info">Northeastern Combat Robotics Club</p>
                 <p class="date">September 2024 - Present</p>
             </div>
             <div hidden class="dropdownContent">
-                <p class="paragraph">I decided to start this project to expand my CAD skills and get a chance to work with electronics and design. The early CAD for this project is all broken since I made assemblies without using relational dimensioning. </p>
-                <p class="paragraph">Lots of people at the combat robotics club were building horizontal spinner robots, so I decided to build a vertical spinner. </p>
-                <div class="imgSection">
-                    <p class="paragraph">The first thing I did was make some drawings of ideas I had for the robot. I made a solidworks assembly with all of the electronics and motors (which i either measured or found CAD of) to get an idea of the size of the robot. After that, I made my first prototype, which I don't have the CAD for because I changed the files instead of making copies and the assembly broke since I didn't use relational dimensioning.</p>
-                    <div class="image" style="flex-basis: 70%;"><img style="width: 100%;" src="Assets/combatRobot/measurementPlanning.png"></div>
-                </div>
-                <br>
+
+                <p class="heading">What and why?</p>
+                <p class="paragraph">GALINT is an 1 pound combat robot for the plastic ant combat robotics league. The robot has a vertical drum spinner design with two foam wheels in the back. </p>
+
+                <p class="heading">Design & Planning</p>
+                <p class="paragraph">The final design included 5 3D printed parts, a weapon, frame, top plate, and a spacer for the bearing and weapon mount. I measured the size of all the electronics and tried to make the frame as small as possible so I could make the weapon as large as possible. I also physically weighed everything on a scale or found the theoretical weight shown on the 3D printer slicer software to make sure I satisfied the weight requirement. </p>
                 
-                <div class="imgSection">
-                    <div style="flex-basis: 20%;" class="image"><img style="width: 100%;" src="Assets/combatRobot/weaponHolder.png"></div>
-                    <div style="flex-basis: 20%;" class="image"><img style="width: 100%;" src="Assets/combatRobot/OldWeapon.png"></div>
-                    <p style="flex-basis: 80%;" class="paragraph">I was originally going to have 5 parts, the housing for the drive motors, bottom plate, top plate, a separate mount for the weapon motor, and the weapon. Here are pictures of the original weapon mount and weapon. 
-                    </p>
-                </div>
-                <br>
-
-                <p class="paragraph">This design had a couple of problems. First, it was over complicated and assembly was going to be a nightmare, it was going to be weak at the connections between parts, and it was asymmetrical (and ugly). So I set out to redesign the robot with simplicity, ease of assembly, and symmetry in mind. </p>
-            
-                <div class="imgSection">
-                    <p class="paragraph">To do this, I combined the bottom plate, drive motor housing, and weapon motor mount into a new and much more complete bottom plate. I also changed the weapon to be more symmetric Here is the design of my second prototype. I made the spots for the screws bigger for heat-set inserts and used a bearing to mount the weapon. </p>
-                    <div class="image"><img style="width: 100%;" src="Assets/combatRobot/assemblyPicture.png"></div>
-                </div>
-                <br>
-
-                <p class="paragraph">I originally asked someone in the club what bearings they had and they sent me a McMaster file for the bearing, but when I actually 3D printed everything they told me they didn’t have any of that bearing. The competition for the semester was soon so I tried to use a dremel to cut deeper into the bearing hole, but it just caused the PLA to melt and the shape of the hole to warp. I had to change the CAD to accommodate the new bearing. </p>
-
-                <div class="imgSection">
-                    <p class="paragraph" style="flex-basis: 70%;">In order to make the weapon the biggest I could possibly make it, I did some weight calculations. LargeWeapon is the one in this design, which I originally wanted to make about 250 grams, but it wasn't possible because of the weight of everything else. </p>
-                    <div class="image"><img style="width: 100%;" src="Assets/combatRobot/weightCalcs.png"></div>
+                <div class="imgSection" style="width: 100%; height: 16vw; justify-content: center; gap: 3vw;" >
+                    <img class="bodyImage" src="Assets/combatRobot/measurementPlanning.png">
+                    <img class="bodyImage" src="Assets/combatRobot/assemblyPicture.png">
+                    <img class="bodyImage" src="Assets/combatRobot/weightCalcs.png">
                 </div>
 
-                <p class="paragraph">I'm still working on this project. The next step is to 3D print all the parts and assemble it. Last semester, I had soldered all the electronics, including a two drive motors, a brushless weapon motor, a weapon and drive ESC, a reciever, and a switch. I left the electronics in the 1 pound robot cabinet in the club room and it got lost over winter break, so I need re-do all the soldering.</p>
 
-                <p class="paragraph">I have been making small tweaks to different parts the robot and 3d printing them to test out how they fit together</p>
-                <img style="border-radius: 20px; width: 101%;" src="Assets/combatRobot/robotParts.jpg">
+                <p class="heading">Fabrication & Assembly</p>
+                <p class="paragraph">I soldered a circuit involving a weapon ESC, drive ESC, a weapon motor, 2 drive motors, a switch, and a receiver using a circuit diagram one of the club leads made. I 3D printed everything out of super PLA plus and put heat-set inserts on the top plate and frame. Additionally, I 3D printed a spacer for where the weapon motor mounts and a spacer for the bearing so that the weapon would fit better in the design. I had to make a couple 3D printed prototypes to make sure the design fit together properly.  </p>
+
+                <div class="imgSection" style="width: 100%; height: 16vw; justify-content: center; gap: 5px;" >
+                    <img class="bodyImage" src="Assets/combatRobot/motor.jpg">
+                    <img class="bodyImage" src="Assets/combatRobot/electronicMounts.jpg">
+                    <img class="bodyImage" src="Assets/combatRobot/electronics.jpg">
+                    <img class="bodyImage" src="Assets/combatRobot/robot.jpg">
+                </div>
+
+                <div class="imgSection" style="width: 100%; height: 16vw; justify-content: center;" >
+                    <img class="bodyImage" src="Assets/combatRobot/robotParts.jpg">
+                </div>
+
+
+                <p class="heading">Results & Possible Improvements</p>
+                <p class="paragraph">The robot passed the test to qualify for the competition, which involved testing the drive, weapon, and weapon lock. When the robot actually competed, it had an issue where the weapon would slow down every time it drove. This might’ve happened because the battery wasn’t charged enough, or because something was wrong with my weapon motor, which I noticed was abnormally hot to the touch after competing. For next time, I want to place the drive motors closer to the center of mass of the robot to improve it's drive functionality.</p>
+
             </div>
         </div>
 
@@ -151,54 +152,38 @@
                 <p class="date">September - December 2024</p>
             </div>
             <div hidden class="dropdownContent">
-                <p class="paragraph">I worked on this project with 6 other engineers as a team at Northeastern’s Forge Product Development lab. </p>
-                
-                <div class="imgSection">
-                    <div class="paragraphs" style="flex-basis: 60%;">
-                        <p class="paragraph">We began by coming up with problems relating to forge’s theme, which was safety for the fall 2024 semester. As a group, we chose 3 key problems and came up with different products that could solve the problems. We then made sketches and voted on the best idea, which was a height changing cane. </p>
-                        <p class="paragraph">Our goals for the cane were to include a GPS system, an app to track step count, pressure sensors to automate lengthening and shortening, and the height changing mechanism. I chose to work on the height changing mechanism. </p>
-                        <p class="paragraph"> First, I researched how to turn rotational motion from a motor into translational motion, and decided to use a telescopic actuator mechanism. Here is some early CAD I made for the body. The CAD includes a coupler, a threaded rod, and two gliders that move along the threaded rod. </p>
-                    </div>
-                    <div class="image"><img style="width: 100%;" src="Assets/SmartStep/Prototype1.png"></div>
-                </div>
-                <br>
+                <p class="heading">What and why?</p>
+                <p class="paragraph">After doing research on causes of injury amongst elderly people, my forge team and I found that most injuries are caused while navigating stairs. Traditional canes do little to help since using them to navigate stairs can be awkward and difficult for elderly people. To try to prevent injuries, we designed Smart Step, a cane with a height changing mechanism. I was tasked with designing the body section of the tube, which involved a height changing mechanism. </p>
 
-                <div class="imgSection">
-                    <div class="image"> <img style="width: 100%;" src="Assets/SmartStep/Prototype2.png"> </div>
-                    <p style="flex-basis: 70%;" class="paragraph">I then made a second prototype of the lower body tube connection to the upper body tube. This design didn’t have a way for the threads on the lower body tube to interface with the upper body tube, and nothing stopping it from moving rotationally instead of translationally. At this point, I needed to think of a track system to constrain the movement of the lower body tube to translation. </p>
-                </div>
-                <br>
+                <p class="heading">Design & Planning</p>
+                <p class="paragraph">The design involves a telescopic actuator mechanism, with an aluminum threaded rod in the middle that is connected to a motor at the top, allowing it to rotate. The lower body tube is constrained to translational motion by a glider that runs along a thin aluminum rod acting as a track. A 3D printed piece on the bottom of the upper body tube holds the thin aluminum rod, and  4 3D printed parts hold 2 threaded nuts in place on the lower body tube, allowing the nuts to interface with the threaded aluminum rod. </p>
 
-                <div class="imgSection">
-                    <p style="flex-basis: 90%" class="paragraph"> My solution was creating a cutout in the upper body tube with an aluminum rod in the middle, which acts as a track system for the lower body tube to move along. To interface with the threaded rods, the gliders on the lower body tube have a nut inside of them that has the same threading.</p>
-                    <div class="image"> <img style="width: 100%;" src="Assets/SmartStep/myPart.png"> </div>
-                    <div style="flex-basis: 20%;" class="image"><img style="width: 100%;" src="Assets/SmartStep/Glider.png"></div>
+                <div class="imgSection" style="height: 11vw; width: 100%;">
+                    <img class="bodyImage" src="Assets/SmartStep/myPart.png">
+                    <img class="bodyImage" src="Assets/SmartStep/Glider.png">
+                    <img class="bodyImage" src="Assets/SmartStep/slide.png">
+                    <img class="bodyImage" src="Assets/SmartStep/bottomPiece.png">
                 </div>
-                <br>
 
-                <div class="imgSection">
-                    <div style="flex-basis: 34%;" class="image"><img style="width: 100%;" src="Assets/SmartStep/bottomPiece.png"></div>
-                    <div class="image"><img style="width: 100%;" src="Assets/SmartStep/slide.png"></div>
-                    <p style="flex-basis: 80%;" class="paragraph">The outer aluminum rod slots into a piece at the bottom of the upper body tube. And a 3D printed piece constrains the rotational motion by sliding on the aluminum rod.</p>
+                <div class="imgSection" style="width: 100%; height: 11vw; justify-content: center;" >
+                    <img class="bodyImage" src="Assets/SmartStep/finalCane.png">
                 </div>
-                <br>
-                <br>
 
-                <div class="imgSection">
-                    <p style="flex-basis: 20%;" class="paragraph">Here is a picture of the final assembly. As can be seen, the body section is integrated with the base and the electronics case. </p>
-                    <div class="image"><img style="width: 100%;" src="Assets/SmartStep/finalCane.png"></div>
+                <p class="heading">Fabrication & Assembly</p>
+                <p class="paragraph">We ordered the Aluminum parts and the PVC body tubes online. I 3D printed all of the other parts and used screws to assemble the body. For the inner body tube, I used a drill press with a smaller and larger tool to make the screws flush with the exterior of the tube. I also designed a piece to hold the motor down so that it wouldn’t get pushed out of place when force was applied. </p>
+
+                <div class="imgSection" style="width: 100%; height: 20vw; justify-content: center; gap: 3vw;" >
+                    <img class="bodyImage" src="Assets/SmartStep/caneFace.jpg">
+                    <img class="bodyImage" src="Assets/SmartStep/motorHolder.jpg">
                 </div>
-                <br>
 
-                <div class="imgSection">
-                    <div style="flex-basis: 15%;" class="image"><img style="width: 100%;" src="Assets/SmartStep/caneFace.jpg"></div>
-                    <div style="flex-basis: 15%;" class="image"><img style="width: 100%;" src="Assets/SmartStep/motorHolder.jpg"></div>
-                    <p style="flex-basis: 80%;" class="paragraph">The space between the inner body tube and outer body tube was about 0.1 inch, so I used a small drill bit and then a larger drill bit on the drill press to make holes for screws so that they could be flush with the exterior of the inner body tube. We drew a funny face on the inner body tube and I designed a piece to hold down the motor since all the force would go straight through the threaded rod and into it. </p>
+                <p class="heading">Result & Possible Improvements</p>
+                <p class="paragraph">It took about 9 seconds for the cane to fully extend from a contracted position, which is too slow for elderly people to use. To cut costs, we used a motor that we found in a scrap motor bucket at a makerspace. If I were doing the project again, I would put more thought into selecting a motor based on torque and speed requirements. Additionally, getting an aluminum rod with a larger pitch could also help increase speed (while also increasing the required torque).</p>
+
+                <div class="imgSection" style="width: 100%; height: 40vw; justify-content: center;" >
+                    <img class="bodyImage" src="Assets/imgLoop2/img1.jpg">
                 </div>
-                <br>
 
-                <p class="paragraph"> I also helped with the electronics and testing the motor. Our lead insisted on using motors that were already available at the makerspace we were working in, so we tested out a couple of motors. The fastest motor we found took about 6 seconds to fully extend or contract. </p>
-                <p class="paragraph"> In the end, something went wrong with the electronics so it wasnt working on time for the showcase. </p>
             </div>
 
         </div>
@@ -211,40 +196,45 @@
                 <p class="date">September - November 2024</p>
             </div>
             <div hidden class="dropdownContent" >
-                <p class="paragraph">I worked on this project in collaboration with students at the Northeastern University Launch Initiative club.</p>
                 
-                <p class="paragraph">We each made openrocket designs for a 4.85 foot tall rocket. We changed different settings in the openrocket to maximise stability, apogee, flight time, and minimize ground hit velocity. Here are pictures of my openrocket design, the individual parts, and the results from the simulation. </p>
+                <p class="heading">What and Why?</p>
+                <p class="paragraph">The purpose of this project was to build a subscale rocket for the Nasa Student Launch Challenge. My role in the project was making a prototype in OpenRocket software, and later designing the fin can for the rocket. </p>
 
-                <div class="imgSection">
-                    <div style="flex-basis: 81.5%;" class="image"><img style="width: 100%;" src="Assets/NULI/openRocket.png"></div>
-                    <div style="flex-basis: 18.5%;" class="image"><img style="width: 100%;" src="Assets/NULI/rocketComponents.png"></div>
-                </div>
-                <div class="imgSection">
-                    <div style="flex-basis: 100%;" class="image"><img style="width: 100%;" src="Assets/NULI/rocketSimulation.png"></div>
-                </div>
-                <br>
+                <p class="heading">Design & Planning</p>
+                <p class="paragraph">I simulted the flight of the 4.85 foot tall rocket in OpenRocket, making changes to the rocket’s design to maximize the rocket’s stability, apogee, flight time, and minimize ground hit velocity. Unfortunately, my OpenRocket model wasn't chosen by the club lead to serve as the plan for the rocket. </p>
 
-                <p class="paragraph">After finalizing our OpenRocket designs, I began to work on the fin can for the rocket. I asked my subteam lead for specifications about things I needed to know, like the diameter of the inner body tube that holds the motor, and the diameter of the outer body tube, as well as the dimensions of the fins. The goal was to minimize weight and maximize strength, and the design required the accommodation of 3 fin mounts and space for 3 metal rods to pass through it.</p>
-
-                <div class="imgSection">
-                    <p class="paragraph" style="flex-basis: 140%;">Here was my first design. The fins mount to each fin can with two screws, 6 screws mount the fin can to the outer body tube, and 12 screws mount the fin can to the inner body tube. Other people in the club’s designs had the holes for the metal rods aligned with places where the fins mount. In my design, I chose to move the holes away from the fin mounts to better distribute the force since my subteam lead said that the majority of the force was coming from the rods and the fins. </p>
-                    <div class="image"><img style="width: 100%;" src="Assets/NULI/finMount1.png"></div>
+                <div class="imgSection" style="width: 100%; height: 18vw;" >
+                    <img class="bodyImage" src="Assets/NULI/openRocket.png">
+                    <img class="bodyImage" src="Assets/NULI/rocketComponents.png">
                 </div>
+
+                <div class="imgSection" style="width: 100%" >
+                    <img style="width:100%;" class="bodyImage" src="Assets/NULI/rocketSimulation.png">
+                </div>
+
+                <p class="paragraph">Once we decided on an OpenRocket model to use, we each began making fin cans for the motor section of the rocket. I designed a few prototypes for the fin can, attempting to minimize weight, maximize strength, and increase ease of assembly. </p>
+
+                <div class="imgSection" style="width: 100%; height: 18vw; justify-content: center; gap: 5vw;">
+                    <img class="bodyImage" src="Assets/NULI/finMount1.png">
+                    <img class="bodyImage" src="Assets/NULI/finMount2.png">
+                    <img class="bodyImage" src="Assets/NULI/finMount3.png">
+                </div>
+
+                <p class="paragraph">Once we decided on an OpenRocket model to use, we each began making fin cans for the motor section of the rocket. I designed a few prototypes for the fin can, attempting to minimize weight, maximize strength, and increase ease of assembly. Here are some of my prototypes: </p>
                 
+                <p class="heading">Fabrication</p>
+                <p class="paragraph">I 3D printed 3 prototypes and fitted them to the inner body and outer body tube of the rocket. I also tested the strength of the fin can by applying force to the fins. Here are some pictures of 3D prints. </p>
 
-                <p class="paragraph">I then re-designed it because the connection to the outer body tube was weak and my subteam lead gave me the wrong dimension for inner and outer body tubes of the rocket. </p>
-                
-                <div class="imgSection">
-                    <div class="image" style="flex-basis: 80%;"><img style="width: 100%;" src="Assets/NULI/finMount2.png"></div>
-                    <div class="paragraphs">
-                        <p class="paragraph">Here is my second design. I fixed the dimensions of the inner and outer body tube (which I measured myself instead of taking people’s word for it), and I changed the connection to the outer body tube to be more solid.</p>
-                        <p class="paragraph">When I showed this design to my subteam leader, he said that he wanted me to extend the holes for the connection with the outer body tube so that heat-set inserts could be placed inside. Originally, the only way I could think of doing this was by moving the holes for the metal rods to be aligned with the fin mount. </p>
-                    </div>
+                <div class="imgSection" style="width: 100%; height: 18vw; justify-content: center; gap: 5vw;">
+                    <img class="bodyImage" src="Assets/NULI/3dPrint1.jpg">
+                    <img class="bodyImage" src="Assets/NULI/3dPrint2.jpg">
                 </div>
 
-                <div class="imgSection">
-                    <p class="paragraph">In my final design, I took a page from the first design with the configuration of the heat set insert holes. I also ditched the beveled holes because the fin was going to be mounted using a nut and bolt, and I didn’t know the dimensions of the bolt. </p>
-                    <div class="image" style="flex-basis: 80%;"><img style="width: 100%;" src="Assets/NULI/finMount3.png"></div>
+                <p class="heading">Result</p>
+                <p class="paragraph">Here is a picture of my final fin can, which wasn't selected for the final design of the rocket. The fins mount in 3 places and two holes mount the can to the exterior body tube with heat set inserts (i never bothered to put them in since the design wasn't selected). The rest of the holes are for screws mounting the fin can to the interior body tube. If I were to make another prototype, I would try to decrease the number of screws needed to make assembly easier. </p>
+                
+                <div class="imgSection" style="width: 100%; height: 18vw; justify-content: center; gap: 5vw;">
+                    <img class="bodyImage" src="Assets/NULI/final.jpg">
                 </div>
 
             </div>
@@ -259,27 +249,27 @@
             </div>
             <div hidden class="dropdownContent">
 
-                <p class="paragraph">I worked on this project under Alberto De la Torre, the professor in charge of the DeLTA lab. My task was to design a Vacuum-compatible magnetic sample holder with rotational and height adjustment. </p>
-
-                <p class="paragraph">The first thing I did was meet with the assistant lab professor to discuss the specifications of the project. It needed to be less than 30mm wide, and needed to have open space on two of the sides to absorb light from a laser and reflect it perpendicularly. </p>
-
-                <div class="imgSection">
-                    <p class="paragraph">We found the sizes of the magnets needed to produce the required magnetic field for the experiment and I created an initial prototype. This prototype had a k-shape that would have the material sample sitting out in the open, allowing light from the laser to enter from one side and exit perpendicularly. </p>
-                    <div class="image" style="flex-basis: 30%;"><img style="width: 100%;" src="Assets/MaterialHolder/k shape.png"></div>
-                </div>
-
-                <p class="paragraph">After making this design and talking to the professor, he let me know that there had been some changes to the experimental setup because of the lab the experiment was being done at. In my first design, I had given space on the sides for the laser to enter and exit, however, the new setup required the laser to enter from the side and exit upwards. </p>
+                <p class="heading">What and why?</p>
+                <p class="paragraph">My task was to design a Vacuum-compatible magnetic sample holder with rotational and height adjustment for an optical spectroscopy experiment. The holder needed to allow a laser to enter in one direction, and be emitted out in a perpendicular direction by the sample. I worked on this project under the supervision of the professor managing the lab.</p>
                 
-                <div class="imgSection">
-                    <div class="image" style="flex-basis: 40%;"><img style="width: 100%;" src="Assets/MaterialHolder/finalHolder.png"></div>
-                    <p class="paragraph">I made a new design that allows for the laser to enter through the side and be reflected out upwards. The bottom adapter piece has compatible threads with the base at the lab, and has a threaded hole for a small screw to fit into, giving the people running the experiment freedom to adjust the angle of the upper piece and its height by about 5 mm. There are two cube cutouts in the top piece to place the magnets into. </p>
+                <p class="heading">Design & Planning</p>
+                <p class="paragraph">I originally made a design where the laser hits the sample from the front and exits to a side plane, but when the professor updated me on the design he said it needed to emit the laser out of the top plane because of the experiment conditions. The K-shaped holder was the first prototype and the circular one is the final project. For the final project, an adapter connects the holder to the experiment setup, and a small screw holding the actual material mount in place. Both designs have magnets on either side of the sample.</p>
+
+                <div class="imgSection" style="width: 100%; height: 18vw; justify-content: center; gap: 5vw;">
+                    <img class="bodyImage" src="Assets/MaterialHolder/k shape.png">
+                    <img class="bodyImage" src="Assets/MaterialHolder/finalHolder.png">
                 </div>
 
-                <div class="imgSection">
-                    <p class="paragraph">The lab professor and I got the piece machined at Xometry, which is a manufacturing service. Here is what the piece looks like in real life: </p>
-                    <div class="image" style="flex-basis: 35%;"><img style="width: 100%;" src="Assets/MaterialHolder/PartsTogether.jpg"></div>
-                    <div class="image" style="flex-basis: 60%;"><img style="width: 100%;" src="Assets/MaterialHolder/individualParts.jpg"></div>
+                <p class="heading">Fabrication & Assembly</p>
+                <p class="paragraph">The professor and I got a quote at Xometry for the lower piece and we 3D printed the upper piece. We ordered the two magnets off the internet. </p>
+
+                <div class="imgSection" style="width: 100%; height: 18vw; justify-content: center; gap: 5vw;">
+                    <img class="bodyImage" src="Assets/MaterialHolder/PartsTogether.jpg">
+                    <img class="bodyImage" src="Assets/MaterialHolder/individualParts.jpg">
                 </div>
+
+                <p class="heading">Result</p>
+                <p class="paragraph">The experiment the mount was designed for hasn’t happened yet, so I won’t know about what can be improved until the mount gets used.</p>
 
             </div>
         </div>

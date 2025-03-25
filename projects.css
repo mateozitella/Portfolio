@@ -101,20 +101,30 @@
 }
 
 .paragraph {
-    margin-top: 20px; 
+    margin-top: 10px; 
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: 300;
+    opacity: 80%;
 }
 
 .imgSection {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0px;
     align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.image img {
+.bodyImage {
     border-radius: 20px;
+    width: auto;
+    height: 100%;
 }
 
+.heading {
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 25px;
+}
