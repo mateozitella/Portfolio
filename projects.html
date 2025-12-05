@@ -80,48 +80,88 @@
             <p id="intro"> Projects </p>
             <i class="arrow1"></i>
         </div>
-
+        
         <div class="dropdown">
             <div class="dropdownTitle">
                 <img class="gearimg" src="Assets/gear.png">
                 <p class="title">Aerobat Print-In-Place Design</p>
                 <p class="info">Silicon Synapse Lab</p>
-                <p class="date">March 2025 - Present</p>
+                <p class="date">March - May 2025</p>
             </div>
             <div hidden class="dropdownContent">
                 <p class="heading">What and Why?</p>
                 <p class="paragraph">Aerobat is a flapping-wing robot at the Northeastern Silicon Synapse lab that mimics the anatomy of a bat. The current design involves links cut out of carbon fiber sheets connected by small handmade brass rivets. These rivets need to be manually cut out from brass tubes and the assembly process is long and tedious. To eliminate the need for the brass rivets, I have been working on a design that replaces them with print-in-place links.</p>
 
-                <p class="heading">Design & Planning</p>
-                <p class="paragraph">I am currently working on the 3D printed linkage system for Aerobat’s wing assembly. I began by taking the original CAD for the wing and editing the joints, making all key dimensions related to global variables in the assembly so I could change them for all joints at once.</p>
+                <p class="heading">Design and Fabrication</p>
+                <p class="paragraph">I began by taking the original CAD for the wing and editing the joints, making all key dimensions related to global variables in the assembly so I could change them for all joints at once. At first, I began by only printing 1 joint and then upscaled to a wing, and then to the whole assembly. With each iteration, I tested the joint’s strength and rigidity. From my testing, the combination of variables shown below seems to work the best. </p>
                 
-                <div class="imgSection" style="width: 100%; height: 12vw; justify-content: center; gap: 3vw;" >
-                    <img class="bodyImage" src="Assets/AerobatPIP/AerobatWing.png">
+                <div class="imgSection" style="width: 100%; height: 11vw; justify-content: center; gap: 1vw;" >
                     <img class="bodyImage" src="Assets/AerobatPIP/AerobatVariables.png">
+                    <img class="bodyImage" src="Assets/AerobatPIP/AerobatGraveyard.jpg">
+                    <img class="bodyImage" src="Assets/AerobatPIP/AerobatPip.png">
                 </div>
 
-                <p class="heading">Fabrication</p>
-                <p class="paragraph">I iteratively printed many joints and wing assemblies using the new design, meanwhile testing each print’s strength and stability. The key was to find the smallest possible vertical space between the links while making sure the joints didn't fuze together when printed. I also experimented with having 3 supports on each joint but the joints with 6 supports were more stable. From my testing, the combination of variables shown below seems to work best.</p>
+                <p class="paragraph">To get the design to work, I needed to mess with the 3d printer settings, especially those for support generation. I also modified the joint design to be flipped upside-down for the joints that connected the circular body to the lower wing to make the 3d printing possible. It took a LOT of prints and messing with the variables to get the desired rigidity. </p>
 
                 <div class="imgSection" style="width: 100%; height: 20vw; justify-content: center; gap: 3vw;" >
-                    <img class="bodyImage" src="Assets/AerobatPIP/AerobatPrints.png">
                     <img class="bodyImage" src="Assets/AerobatPIP/AerobatJoint.png">
-                    <img class="bodyImage" src="Assets/AerobatPIP/JointPrint.png">
+                    <img class="bodyImage" src="Assets/AerobatPIP/AerobatPip2.png">
                 </div>
 
-                <p class="heading">Next Steps</p>
-                <p class="paragraph">Next semester, I hope to make a new Aerobat design that is completely printed in place. This will involve editing the CAD of the robot and replacing all the links with the same 3d printed joint design in the wing assembly. </p>
+                <p class="heading">End Result</p>
+                <p class="paragraph">The end result was a fully 3d printed Aerobat skeleton with joints that are as lightweight and rigid as possible considering the resolution of the 3d printer. </p>
             </div>
             
         </div>
 
+        <div class="dropdown">
+            <div class="dropdownTitle">
+                <img class="gearimg" src="Assets/gear.png">
+                <p class="title">Optical Table Cover</p>
+                <p class="info">DeLTA Lab</p>
+                <p class="date">March - May 2025</p>
+            </div>
+            <div hidden class="dropdownContent">
+                <p class="heading">What and Why?</p>
+                <p class="paragraph">The Delta Lab does experiments with lasers that are dangerous to the human eye. FDA regulations state that these lasers must be covered to prevent injury. The lab previously had a working safety cover composed of black anodized 80/20 aluminum bars and acetal sheets, but a large new magnet that is unable to be moved was installed on the optical table. There was also a new optical table that didn’t have a safety cover yet. I made a new safety cover for a section of the table to account for the new magnet and for the new table. </p>
+
+                <div class="imgSection" style="width: 100%; height: 40vw; justify-content: center; gap: 3vw;" >
+                    <img class="bodyImage" src="Assets/TableCover/DeltaMagnet.jpg">
+                </div>
+
+                <p class="heading">Design & Planning</p>
+                <p class="paragraph">I came into the lab and took measurements of both tables. I also talked to students who were running experiments on the sections of the tables that I was concerned with so that the cover designs didn’t interfere with anything. I made a map of my plan for the new covers. </p>
+                
+                <div class="imgSection" style="width: 100%; height: 40vw; justify-content: center; gap: 3vw;" >
+                    <img class="bodyImage" src="Assets/TableCover/CoverPlan.jpg">
+                </div>
+
+                <p class="paragraph">I created SolidWorks models of both tables to plan out the cover for the selected areas. I had an idea to replace the horizontal aluminum bars with a 3d printed part that would support the acetal sheets on the top while interfacing with the vertical aluminum bars. This would save costs of buying so many aluminum bars. Then I created a drawing of each assembly and a bill of materials to get the number of acetal sheets needed and dimensions for those. After compiling the sheet dimensions, I planned out how these sheet sizes could be fit into larger sheets to reduce the price of the quote. The cover setups, BOMs, and final sheet planning are below. </p>
+
+                <div class="imgSection" style="width: 100%; height: 12vw; justify-content: center; gap: 1vw;" >
+                    <img class="bodyImage" src="Assets/TableCover/TeddySetup.png">
+                    <img class="bodyImage" src="Assets/TableCover/TeddyBOM.png">
+                    <img class="bodyImage" src="Assets/TableCover/AliciaSetup.png">
+                    <img class="bodyImage" src="Assets/TableCover/AliciaBOM.png">
+                </div>
+
+                <div class="imgSection" style="width: 100%; height: 20vw; justify-content: center; gap: 1vw;" >
+                    <img class="bodyImage" src="Assets/TableCover/AcetalSheets.png">
+                </div>
+
+
+                <p class="heading">Next Steps</p>
+                <p class="paragraph">I unfortunately wasn’t able to finish this project since the semester ended and I went back home for the summer. The next steps for this project would be to order the acetal sheets and 80/20 aluminum bars, cut the sheets to size in a laser cutter, and 3d print the required parts. </p>
+            </div>
+            
+        </div>
 
         <div class="dropdown">
             <div class="dropdownTitle">
                 <img class="gearimg" src="Assets/gear.png">
                 <p class="title">ST-500 Cryostat Mount</p>
                 <p class="info">DeLTA Lab</p>
-                <p class="date">February 2025 - Present</p>
+                <p class="date">February - March 2025</p>
             </div>
             <div hidden class="dropdownContent">
                 <p class="heading">What and Why?</p>
